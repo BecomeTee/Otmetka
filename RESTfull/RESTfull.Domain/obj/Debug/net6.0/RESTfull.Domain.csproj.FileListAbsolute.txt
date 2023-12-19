@@ -1,0 +1,11 @@
+D:\Visualka\Шабанов\RESTFull\RESTfull\RESTfull.Domain\bin\Debug\net6.0\RESTfull.Domain.deps.json
+D:\Visualka\Шабанов\RESTFull\RESTfull\RESTfull.Domain\bin\Debug\net6.0\RESTfull.Domain.dll
+D:\Visualka\Шабанов\RESTFull\RESTfull\RESTfull.Domain\bin\Debug\net6.0\RESTfull.Domain.pdb
+D:\Visualka\Шабанов\RESTFull\RESTfull\RESTfull.Domain\obj\Debug\net6.0\RESTfull.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Visualka\Шабанов\RESTFull\RESTfull\RESTfull.Domain\obj\Debug\net6.0\RESTfull.Domain.AssemblyInfoInputs.cache
+D:\Visualka\Шабанов\RESTFull\RESTfull\RESTfull.Domain\obj\Debug\net6.0\RESTfull.Domain.AssemblyInfo.cs
+D:\Visualka\Шабанов\RESTFull\RESTfull\RESTfull.Domain\obj\Debug\net6.0\RESTfull.Domain.csproj.CoreCompileInputs.cache
+D:\Visualka\Шабанов\RESTFull\RESTfull\RESTfull.Domain\obj\Debug\net6.0\RESTfull.Domain.dll
+D:\Visualka\Шабанов\RESTFull\RESTfull\RESTfull.Domain\obj\Debug\net6.0\refint\RESTfull.Domain.dll
+D:\Visualka\Шабанов\RESTFull\RESTfull\RESTfull.Domain\obj\Debug\net6.0\RESTfull.Domain.pdb
+D:\Visualka\Шабанов\RESTFull\RESTfull\RESTfull.Domain\obj\Debug\net6.0\ref\RESTfull.Domain.dll
