@@ -23,19 +23,37 @@ namespace RESTfull.Infrastructure.Repository
             return _context.students.OrderBy(x => x.Id).ToList();
         }
 
+        public ICollection<Student> GetStudentsByNameNGroup(string name, string group)
+        {
+            return _context.students.Where(s => s.Name == name && s.Group == group).ToList();
+        }
+
         public Student GetStudent(Guid id) 
         {
             return _context.students.Where(x => x.Id == id).FirstOrDefault();
         }
 
-        public Student GetStudent(string name)
+        public Student GetStudentByName(string name)
         {
             return _context.students.Where(x => x.Name == name).FirstOrDefault();
         }
 
-        /*public bool StudentExist(Guid id)
+        public bool CreateStudent(Student student)
+        {
+            _context.Add(student);
+            return Save();
+        }
+
+
+        public bool StudentExist(Guid id)
         {
             return _context.students.Any(x => x.Id == id);
-        }*/
+        }
+
+        public bool Save()
+        {
+            var saved = _context.SaveChanges();
+            return saved > 0 ? true : false;
+        }
     }
 }
