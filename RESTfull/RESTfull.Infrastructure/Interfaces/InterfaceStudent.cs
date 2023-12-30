@@ -6,7 +6,15 @@ namespace RESTfull.Infrastructure.Interfaces
     {
         ICollection<Student> GetStudents();
         Student GetStudent(Guid id);
-        Student GetStudent(string id);
+        Student GetStudentByName(string name);
+        ICollection<Student> GetStudentsByNameNGroup(string name, string group);
+        bool CreateStudent(Student student);
+
+        bool StudentExist(Guid id);
+        bool Save();
+       
+        
+        
         //Student GetStudentById(Guid id);
         //void CreateStudent(Student student);
         //void UpdateStudent(Student student);
