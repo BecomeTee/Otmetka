@@ -44,6 +44,18 @@ namespace RESTfull.Infrastructure.Repository
             return Save();
         }
 
+        public bool UpdateStudent(Student student)
+        {
+            _context.Update(student);
+            return Save();
+        }
+
+        public bool DeleteStudent(Student student)
+        {
+            _context.Remove(student);
+            return Save();
+        }
+
 
         public bool StudentExist(Guid id)
         {
