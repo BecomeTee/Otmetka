@@ -29,15 +29,15 @@ namespace RESTfull.API.Controllers
         }
 
 
-        [HttpGet("{id:Guid}")]
+        /*[HttpGet("{id:Guid}")]
         public StudentDto GetStudent(Guid id)
         {
             var student = _studentRepository.GetStudent(id);
             var studentDto = StudentDtoMapper.ToDto(student);
             return studentDto;
-        }
+        }*/
 
-        /*[HttpGet("{id:Guid}")]
+        [HttpGet("{id:Guid}")]
         public IActionResult GetStudent(Guid id)
         {
             var student = _studentRepository.GetStudent(id);
@@ -50,25 +50,49 @@ namespace RESTfull.API.Controllers
 
             var studentDto = StudentDtoMapper.ToDto(student);
             return Ok(studentDto);
-        }*/
+        }
 
-        [HttpGet("getStudentByName/{name}")]
+        /*[HttpGet("getStudentByName/{name}")]
         public StudentDto GetStudentByName(string name)
         {
             var student = _studentRepository.GetStudentByName(name);
             var studentDto = StudentDtoMapper.ToDto(student);
             return studentDto;
+        }*/
+
+        [HttpGet("getStudentByName/{name}")]
+        public IActionResult GetStudentByName(string name)
+        {
+            var student = _studentRepository.GetStudentByName(name);
+            if (student == null)
+            {
+                // Если студент не найден, возвращаем статус 404 (Not Found)
+                return NotFound();
+            }
+            var studentDto = StudentDtoMapper.ToDto(student);
+            return Ok(studentDto);
         }
 
-        [HttpGet("GetStudentsByNameNGroup/{name}/{group}")]
+        /*[HttpGet("GetStudentsByNameNGroup/{name}/{group}")]
         public ICollection<StudentDto> GetStudentsByNameNGroup(string name, string group)
         {
             var students = _studentRepository.GetStudentsByNameNGroup(name,group);
             var studentsDto = StudentDtoMapper.ToDtoList(students);
             return studentsDto;
+        }*/
+
+        [HttpGet("GetStudentsByNameNGroup/{name}/{group}")]
+        public IActionResult GetStudentsByNameNGroup(string name, string group)
+        {
+            var students = _studentRepository.GetStudentsByNameNGroup(name, group);
+            if (students == null)
+            {
+                // Если студент не найден, возвращаем статус 404 (Not Found)
+                return NotFound();
+            }
+            var studentsDto = StudentDtoMapper.ToDtoList(students);
+            return Ok(studentsDto);
         }
-
-
 
         /*[HttpPost]
         public IActionResult CreateStudent([FromBody] Student createStudent)
@@ -101,6 +125,7 @@ namespace RESTfull.API.Controllers
 
             return Ok("Successfull created");
         }*/
+
         [HttpPost]
         public IActionResult CreateStudent([FromBody] StudentDto createStudent)
         {
@@ -128,11 +153,65 @@ namespace RESTfull.API.Controllers
 
             if (!_studentRepository.CreateStudent(newStudent))
             {
-                ModelState.AddModelError("", "Somesing went wrong");
+                ModelState.AddModelError("", "Something went wrong");
                 return StatusCode(500, ModelState);
             }
 
             return Ok("Successfull created");
+        }
+
+
+        [HttpPut("{studentId}")]
+        public IActionResult UpdateStudent(Guid studentId, [FromBody] StudentDto updateStudent)
+        {
+            if(updateStudent == null)
+            {
+                return BadRequest(ModelState);
+            }
+
+            if(studentId != updateStudent.Id)
+            {
+                return BadRequest(ModelState);
+            }
+
+            if (!ModelState.IsValid)
+            {
+                return BadRequest();
+            }
+
+            var changeStudent = StudentDtoMapper.ToStudentWithId(updateStudent);
+
+            if (!_studentRepository.UpdateStudent(changeStudent))
+            {
+                ModelState.AddModelError("", "Something went wrong");
+                return StatusCode(500, ModelState);
+            }
+
+            return NoContent();
+        }
+
+        [HttpDelete("{studentId}")]
+        public IActionResult DeleteStudent(Guid studentId)
+        {
+            if (!_studentRepository.StudentExist(studentId))
+            {
+                return NotFound();
+            }
+
+            var removeStudent = _studentRepository.GetStudent(studentId);
+
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            if (!_studentRepository.DeleteStudent(removeStudent))
+            {
+                ModelState.AddModelError("", "Something went wrong");
+               
+            }
+
+            return NoContent();
         }
 
     }

@@ -37,5 +37,17 @@ namespace RESTfull.API.DTO
 
             return student;
         }
+
+        public static Student ToStudentWithId(StudentDto studentDto)
+        {
+            var student = new Student
+            {
+                Id = studentDto.Id,
+                Group = studentDto.Group,
+                Name = studentDto.Name
+            };
+
+            return student;
+        }
     }
 }

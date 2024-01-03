@@ -9,7 +9,8 @@ namespace RESTfull.Infrastructure.Interfaces
         Student GetStudentByName(string name);
         ICollection<Student> GetStudentsByNameNGroup(string name, string group);
         bool CreateStudent(Student student);
-
+        bool UpdateStudent(Student student);
+        bool DeleteStudent(Student student);
         bool StudentExist(Guid id);
         bool Save();
        
