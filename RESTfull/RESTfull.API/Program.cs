@@ -22,6 +22,14 @@ builder.Services.AddDbContext<RESTfull.Infrastructure.Data.Context>(options =>
 
 var app = builder.Build();
 
+// Enable CORS 
+app.UseCors(options =>
+{
+    options.AllowAnyOrigin() // Разрешить доступ со всех источников 
+           .AllowAnyMethod() // Разрешить любые HTTP методы 
+           .AllowAnyHeader(); // Разрешить любые заголовки 
+});
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
