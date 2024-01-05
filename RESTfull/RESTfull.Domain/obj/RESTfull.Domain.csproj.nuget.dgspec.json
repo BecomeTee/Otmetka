@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Visualka\\Шабанов\\Otmetka\\RESTfull\\RESTfull.Domain\\RESTfull.Domain.csproj": {}
+    "C:\\Users\\stasik\\source\\repos\\Otmetka\\RESTfull\\RESTfull.Domain\\RESTfull.Domain.csproj": {}
   },
   "projects": {
-    "D:\\Visualka\\Шабанов\\Otmetka\\RESTfull\\RESTfull.Domain\\RESTfull.Domain.csproj": {
+    "C:\\Users\\stasik\\source\\repos\\Otmetka\\RESTfull\\RESTfull.Domain\\RESTfull.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Visualka\\Шабанов\\Otmetka\\RESTfull\\RESTfull.Domain\\RESTfull.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\stasik\\source\\repos\\Otmetka\\RESTfull\\RESTfull.Domain\\RESTfull.Domain.csproj",
         "projectName": "RESTfull.Domain",
-        "projectPath": "D:\\Visualka\\Шабанов\\Otmetka\\RESTfull\\RESTfull.Domain\\RESTfull.Domain.csproj",
-        "packagesPath": "C:\\Users\\amwol\\.nuget\\packages\\",
-        "outputPath": "D:\\Visualka\\Шабанов\\Otmetka\\RESTfull\\RESTfull.Domain\\obj\\",
+        "projectPath": "C:\\Users\\stasik\\source\\repos\\Otmetka\\RESTfull\\RESTfull.Domain\\RESTfull.Domain.csproj",
+        "packagesPath": "C:\\Users\\stasik\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\stasik\\Source\\Repos\\Otmetka\\RESTfull\\RESTfull.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\amwol\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\stasik\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

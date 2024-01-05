@@ -20,3 +20,15 @@ D:\Visualka\Шабанов\Otmetka\RESTfull\RESTfull.Domain\obj\Debug\net6.0\RES
 D:\Visualka\Шабанов\Otmetka\RESTfull\RESTfull.Domain\obj\Debug\net6.0\refint\RESTfull.Domain.dll
 D:\Visualka\Шабанов\Otmetka\RESTfull\RESTfull.Domain\obj\Debug\net6.0\RESTfull.Domain.pdb
 D:\Visualka\Шабанов\Otmetka\RESTfull\RESTfull.Domain\obj\Debug\net6.0\ref\RESTfull.Domain.dll
+C:\Users\stasik\Source\Repos\Otmetka\RESTfull\RESTfull.Domain\bin\Debug\net6.0\RESTfull.Domain.deps.json
+C:\Users\stasik\Source\Repos\Otmetka\RESTfull\RESTfull.Domain\bin\Debug\net6.0\RESTfull.Domain.dll
+C:\Users\stasik\Source\Repos\Otmetka\RESTfull\RESTfull.Domain\bin\Debug\net6.0\RESTfull.Domain.pdb
+C:\Users\stasik\Source\Repos\Otmetka\RESTfull\RESTfull.Domain\obj\Debug\net6.0\RESTfull.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\stasik\Source\Repos\Otmetka\RESTfull\RESTfull.Domain\obj\Debug\net6.0\RESTfull.Domain.AssemblyInfoInputs.cache
+C:\Users\stasik\Source\Repos\Otmetka\RESTfull\RESTfull.Domain\obj\Debug\net6.0\RESTfull.Domain.AssemblyInfo.cs
+C:\Users\stasik\Source\Repos\Otmetka\RESTfull\RESTfull.Domain\obj\Debug\net6.0\RESTfull.Domain.csproj.CoreCompileInputs.cache
+C:\Users\stasik\Source\Repos\Otmetka\RESTfull\RESTfull.Domain\obj\Debug\net6.0\RESTfull.Domain.sourcelink.json
+C:\Users\stasik\Source\Repos\Otmetka\RESTfull\RESTfull.Domain\obj\Debug\net6.0\RESTfull.Domain.dll
+C:\Users\stasik\Source\Repos\Otmetka\RESTfull\RESTfull.Domain\obj\Debug\net6.0\refint\RESTfull.Domain.dll
+C:\Users\stasik\Source\Repos\Otmetka\RESTfull\RESTfull.Domain\obj\Debug\net6.0\RESTfull.Domain.pdb
+C:\Users\stasik\Source\Repos\Otmetka\RESTfull\RESTfull.Domain\obj\Debug\net6.0\ref\RESTfull.Domain.dll
