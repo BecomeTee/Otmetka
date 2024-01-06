@@ -41,6 +41,10 @@
       "PackagePath": "staticwebassets\\sample-data\\weather.json"
     },
     {
+      "Id": "C:\\Users\\stasik\\source\\repos\\Otmetka\\RESTfull\\Students\\wwwroot\\бончлого.png",
+      "PackagePath": "staticwebassets\\бончлого.png"
+    },
+    {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.Students.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

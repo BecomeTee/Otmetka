@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "bpkdF98yv4WAyxImRJKiBYiYCAbhvo7W2vodcwkOyZQ=",
+  "Hash": "kopZRduhSGgMp5x8SJz3W+Wut0tiiPvPkzZlBO5WzjM=",
   "Source": "Students",
   "BasePath": "/",
   "Mode": "Root",
@@ -7824,6 +7824,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\sample-data\\weather.json"
+    },
+    {
+      "Identity": "C:\\Users\\stasik\\source\\repos\\Otmetka\\RESTfull\\Students\\wwwroot\\бончлого.png",
+      "SourceId": "Students",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\stasik\\source\\repos\\Otmetka\\RESTfull\\Students\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "бончлого.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\бончлого.png"
     }
   ]
 }
