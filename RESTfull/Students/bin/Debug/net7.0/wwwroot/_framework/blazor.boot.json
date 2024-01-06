@@ -1,7 +1,7 @@
 {
   "entryAssembly": "Students",
   "resources": {
-    "hash": "sha256-lK53w2uQ7ogK+27du4FwAlxXtcnjQQBUsKco7Rts2ho=",
+    "hash": "sha256-Kk+TwZyODk7yOkxZQw3pgtbgRwujoqEvf95kEIMZTWo=",
     "runtime": {
       "dotnet.7.0.14.dms0nx0b1f.js": "sha256-YWGUknGRzP/fgO6YjvCJKPVQNZAPEd6ll+rHfQEIW+I=",
       "dotnet.timezones.blat": "sha256-t5xviiOQTfAsF0UDhmcyalKiaehUmf/sqJl97tmPM0M=",
@@ -202,10 +202,10 @@
       "mscorlib.dll": "sha256-YcsJInaT/kw3Vrm+SESegPxvT/Lr9RE6rE/KnxWIIc0=",
       "netstandard.dll": "sha256-TztlSRjADgiEABbiAMdWZpHrUVd8wnRtQRAvlwmRP/4=",
       "System.Private.CoreLib.dll": "sha256-BAhrZ8Zg3cJKQipxdzqQo+9jtPkOkRx1ou3oIhDohtk=",
-      "Students.dll": "sha256-F2RLAezqYuTwD4XN9braLzDcRyT06m4gvwGHFoyfYx0="
+      "Students.dll": "sha256-8kDCIEw0f4Rig2d/JCo/hDCxiess7mzPpiR8xJZCgfg="
     },
     "pdb": {
-      "Students.pdb": "sha256-Dt9romEcA0Du4Ya7HMsfC2+xYU0+h1mStxLw+Hai3Eg="
+      "Students.pdb": "sha256-cwSNn26NwJ/Ck/mATOLgB0KyVkdM5lGkwbXeHhZtkbc="
     },
     "runtimeAssets": {
       "dotnet.wasm": {
