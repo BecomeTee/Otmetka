@@ -8,7 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
-//���
+//Ìîå
 builder.Services.AddScoped<InterfaceStudent, StudentRepository>();
 
 
@@ -16,11 +16,19 @@ builder.Services.AddScoped<InterfaceStudent, StudentRepository>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-//�������� ��
+//ÍÀïèñàëè ìû
 builder.Services.AddDbContext<RESTfull.Infrastructure.Data.Context>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 var app = builder.Build();
+
+// Enable CORS 
+app.UseCors(options =>
+{
+    options.AllowAnyOrigin() // Разрешить доступ со всех источников 
+           .AllowAnyMethod() // Разрешить любые HTTP методы 
+           .AllowAnyHeader(); // Разрешить любые заголовки 
+});
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

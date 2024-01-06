@@ -1,0 +1,100 @@
+﻿@page "/"
+@using System.Net.Http
+@using System.Net.Http.Json
+@using System.Net
+@using System.Threading.Tasks
+<PageTitle>Home</PageTitle>
+
+<form class="input-group" @onsubmit="PerformSearch">
+    <input type="text" class="form-control" @bind="searchText" placeholder="Поиск" aria-label="Search" aria-describedby="button-addon2">
+    <button type="submit" class="btn btn-outline-secondary" id="button-addon2" style="width: 100px;">
+        <i class="material-icons">найти</i>
+    </button>
+</form>
+
+@if (isSearching)
+{
+    <p>Поиск...</p>
+}
+else if (searchResults != null && searchResults.Count > 0)
+{
+    <h2>Результаты поиска:</h2>
+    <ul>
+        @foreach (var result in searchResults)
+        {
+            <li>@result.ID - @result.Name - @result.Group</li>
+        }
+    </ul>
+}
+else if (!string.IsNullOrWhiteSpace(searchText) && !isValidInput)
+{
+    <p>Неверный запрос</p>
+    isValidInput = true;
+}
+else if (!string.IsNullOrWhiteSpace(searchText))
+{
+    <p>Студент не найден</p>
+}
+else
+{
+    <p>Введите в поиск имя и фамилию студента, у которого вы хотите посмотреть расписание</p>
+}
+
+
+@code {
+
+    string searchText = "";
+    List<(Guid ID, string Name, string Group)> searchResults = new List<(Guid ID, string Name, string Group)>();
+    bool isSearching = false;
+    bool isValidInput = true;
+
+    [Inject]
+    HttpClient HttpClient { get; set; }
+
+    async Task PerformSearch()
+    {
+        try
+        {
+            if (!string.IsNullOrWhiteSpace(searchText))
+            {
+                isSearching = true; // Устанавливаем флаг поиска
+                string[] searchParams = searchText.Split(' ');
+
+                if (searchParams.Length >= 2)
+                {
+
+                    string name = searchParams[0];
+                    string group = searchParams[1];
+
+                    HttpResponseMessage response = await HttpClient.GetAsync($"https://localhost:7112/api/Stud/GetStudentsByNameNGroup/{name}/{group}");
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        var studentResponses = await response.Content.ReadFromJsonAsync<List<StudentDto>>();
+                        searchResults = studentResponses.Select(sr => (sr.Id, sr.Name, sr.Group)).ToList();
+                        //searchResults = await response.Content.ReadFromJsonAsync<List<(Guid ID, string Name, string Group)>>();
+                        isValidInput = true;
+                    }
+                    else if (response.StatusCode == HttpStatusCode.NotFound)
+                    {
+                        searchResults.Clear();
+                        isValidInput = true;
+                    }
+                }
+                else
+                {
+                    isValidInput = false; // Устанавливаем флаг неверного ввода
+                    searchResults.Clear();
+                }
+
+                isSearching = false; // Устанавливаем флаг окончания поиска
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Ошибка: {ex.Message}");
+            // Обработка исключения
+            isSearching = false; // Устанавливаем флаг окончания поиска при ошибке
+        }
+    }
+}
