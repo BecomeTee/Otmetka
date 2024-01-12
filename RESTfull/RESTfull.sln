@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RESTfull.Domain", "RESTfull
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RESTfull.Infrastructure", "RESTfull.Infrastructure\RESTfull.Infrastructure.csproj", "{2370BBB2-013D-4217-A36E-9D155B950012}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Students", "Students\Students.csproj", "{D3C36E23-CBFB-42B4-9CCF-67A348F42312}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Students", "Students\Students.csproj", "{6E39EB20-115E-472C-97CF-66336E795E65}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{2370BBB2-013D-4217-A36E-9D155B950012}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2370BBB2-013D-4217-A36E-9D155B950012}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2370BBB2-013D-4217-A36E-9D155B950012}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D3C36E23-CBFB-42B4-9CCF-67A348F42312}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D3C36E23-CBFB-42B4-9CCF-67A348F42312}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D3C36E23-CBFB-42B4-9CCF-67A348F42312}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D3C36E23-CBFB-42B4-9CCF-67A348F42312}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E39EB20-115E-472C-97CF-66336E795E65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E39EB20-115E-472C-97CF-66336E795E65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E39EB20-115E-472C-97CF-66336E795E65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E39EB20-115E-472C-97CF-66336E795E65}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

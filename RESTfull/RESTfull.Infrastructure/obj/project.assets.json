@@ -1091,7 +1091,7 @@
       "projectName": "RESTfull.Infrastructure",
       "projectPath": "C:\\Users\\stasik\\source\\repos\\Otmetka\\RESTfull\\RESTfull.Infrastructure\\RESTfull.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\stasik\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\stasik\\Source\\Repos\\Otmetka\\RESTfull\\RESTfull.Infrastructure\\obj\\",
+      "outputPath": "C:\\Users\\stasik\\source\\repos\\Otmetka\\RESTfull\\RESTfull.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\stasik\\AppData\\Roaming\\NuGet\\NuGet.Config",

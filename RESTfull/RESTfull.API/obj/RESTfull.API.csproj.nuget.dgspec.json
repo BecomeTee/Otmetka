@@ -100,7 +100,7 @@
         "projectName": "RESTfull.Domain",
         "projectPath": "C:\\Users\\stasik\\source\\repos\\Otmetka\\RESTfull\\RESTfull.Domain\\RESTfull.Domain.csproj",
         "packagesPath": "C:\\Users\\stasik\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\stasik\\Source\\Repos\\Otmetka\\RESTfull\\RESTfull.Domain\\obj\\",
+        "outputPath": "C:\\Users\\stasik\\source\\repos\\Otmetka\\RESTfull\\RESTfull.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\stasik\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -13,9 +13,8 @@ namespace RESTfull.Infrastructure.Interfaces
         bool DeleteStudent(Student student);
         bool StudentExist(Guid id);
         bool Save();
-       
-        
-        
+
+
         //Student GetStudentById(Guid id);
         //void CreateStudent(Student student);
         //void UpdateStudent(Student student);
