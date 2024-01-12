@@ -1539,7 +1539,7 @@
       "projectName": "RESTfull.API",
       "projectPath": "C:\\Users\\stasik\\source\\repos\\Otmetka\\RESTfull\\RESTfull.API\\RESTfull.API.csproj",
       "packagesPath": "C:\\Users\\stasik\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\stasik\\Source\\Repos\\Otmetka\\RESTfull\\RESTfull.API\\obj\\",
+      "outputPath": "C:\\Users\\stasik\\source\\repos\\Otmetka\\RESTfull\\RESTfull.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\stasik\\AppData\\Roaming\\NuGet\\NuGet.Config",

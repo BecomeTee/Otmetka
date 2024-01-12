@@ -16,7 +16,7 @@ namespace RESTfull.Infrastructure.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             /*modelBuilder.Entity<Attendance>()
-                .HasKey(sc => new {sc.Id_student, sc.Id_class});
+                .HasKey(sc => new { sc.Id_student, sc.Id_class });
             modelBuilder.Entity<Attendance>()
                 .HasOne(c => c.Student)
                 .WithMany(sc => sc.StudentClass)

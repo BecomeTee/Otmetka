@@ -18,13 +18,21 @@
 }
 else if (searchResults != null && searchResults.Count > 0)
 {
-    <h2>Результаты поиска:</h2>
-    <ul>
-        @foreach (var result in searchResults)
-        {
-            <li>@result.ID - @result.Name - @result.Group</li>
-        }
-    </ul>
+    <h1>Результаты поиска:</h1>
+ 
+                @for (int i = 0; i < searchResults.Count; i++)
+                {
+                    var result = searchResults[i];
+                    <div class="container mt-3 p-3 d-flex justify-content-between align-items-center" style="background-color: #f2f2f2;">
+                        <div class="d-flex align-items-center">
+                            <p class="mb-0" style="margin-right: 25px; font-size: 32px; line-height: 1;">@i. @result.Name</p>
+                            <p class="mb-0" style="font-size: 32px; line-height: 1;">@result.Group</p>
+                        </div>
+                        <button class="btn btn-primary align-self-center">Узнать расписание</button>
+                    </div>
+                }
+
+
 }
 else if (!string.IsNullOrWhiteSpace(searchText) && !isValidInput)
 {
@@ -38,6 +46,17 @@ else if (!string.IsNullOrWhiteSpace(searchText))
 else
 {
     <p>Введите в поиск имя и фамилию студента, у которого вы хотите посмотреть расписание</p>
+    
+    
+
+
+
+
+
+
+
+
+
 }
 
 

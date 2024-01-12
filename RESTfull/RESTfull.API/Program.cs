@@ -8,15 +8,17 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
-//ГЊГ®ГҐ
+//Мое
+builder.Services.AddScoped<InterfaceAttend, AttendRepository>();
 builder.Services.AddScoped<InterfaceStudent, StudentRepository>();
+builder.Services.AddScoped<InterfaceClass, ClassRepository>();
 
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-//ГЌГЂГЇГЁГ±Г Г«ГЁ Г¬Г»
+//НАписали мы
 builder.Services.AddDbContext<RESTfull.Infrastructure.Data.Context>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
@@ -25,9 +27,9 @@ var app = builder.Build();
 // Enable CORS 
 app.UseCors(options =>
 {
-    options.AllowAnyOrigin() // Р Р°Р·СЂРµС€РёС‚СЊ РґРѕСЃС‚СѓРї СЃРѕ РІСЃРµС… РёСЃС‚РѕС‡РЅРёРєРѕРІ 
-           .AllowAnyMethod() // Р Р°Р·СЂРµС€РёС‚СЊ Р»СЋР±С‹Рµ HTTP РјРµС‚РѕРґС‹ 
-           .AllowAnyHeader(); // Р Р°Р·СЂРµС€РёС‚СЊ Р»СЋР±С‹Рµ Р·Р°РіРѕР»РѕРІРєРё 
+    options.AllowAnyOrigin() // Разрешить доступ со всех источников 
+           .AllowAnyMethod() // Разрешить любые HTTP методы 
+           .AllowAnyHeader(); // Разрешить любые заголовки 
 });
 
 // Configure the HTTP request pipeline.

@@ -9,7 +9,7 @@ namespace RESTfull.API.DTO
         {
             var classDto = new ClassDto
             {
-                Id = _class.Id,
+                //Id = _class.Id,
                 Name = _class.Name,
                 DateStart = _class.DateStart,
                 DateFinish = _class.DateFinish,
@@ -30,7 +30,7 @@ namespace RESTfull.API.DTO
             return classesDto;
         }
 
-        public static Class ToStudent(ClassDto  classDto)
+        public static Class ToClass(ClassDto  classDto)
         {
             var _class = new Class
             {
@@ -44,16 +44,19 @@ namespace RESTfull.API.DTO
             return _class;
         }
 
-        /*public static Student ToStudentWithId(StudentDto studentDto)
+        public static Class ToClassWithId(ClassDtoWithId classDto)
         {
-            var student = new Student
+            var clas = new Class
             {
-                Id = studentDto.Id,
-                Group = studentDto.Group,
-                Name = studentDto.Name
+                Id = classDto.Id,
+                Name = classDto.Name,
+                DateStart = classDto.DateStart,
+                DateFinish = classDto.DateFinish,
+                Room = classDto.Room,
+                Teacher = classDto.Teacher
             };
 
-            return student;
-        }*/
+            return clas;
+        }
     }
 }

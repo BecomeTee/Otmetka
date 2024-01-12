@@ -1,8 +1,8 @@
 ﻿namespace RESTfull.API.DTO
 {
-    public class ClassDto
+    public class ClassDtoWithId
     {
-        //public Guid Id { get; set; }
+        public Guid Id { get; set; }
         public string Name { get; set; } = String.Empty;
         public DateTime DateStart { get; set; }
         public DateTime DateFinish { get; set; }

@@ -134,15 +134,15 @@ namespace RESTfull.API.Controllers
                 return BadRequest(ModelState);
             }
 
-            /*var student = _studentRepository.GetStudents()
-                .Where(c => c.Name.Trim().ToUpper() == createStudent.Name.TrimEnd().ToUpper())
+            var student = _studentRepository.GetStudents()
+                .Where(c => c.Id == createStudent.Id)
                 .FirstOrDefault();
 
             if (student != null)
             {
-                ModelState.AddModelError("", "Student already exist");
+                ModelState.AddModelError("", "Student with this id already exist");
                 return StatusCode(442, ModelState);
-            }*/
+            }
 
             if (!ModelState.IsValid)
             {
