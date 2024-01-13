@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "kopZRduhSGgMp5x8SJz3W+Wut0tiiPvPkzZlBO5WzjM=",
+  "Hash": "xBFLB6ptUyA/RC0L3Pg9FIYtu18ajHYZO5OrtMQ8GRw=",
   "Source": "Students",
   "BasePath": "/",
   "Mode": "Root",
@@ -7691,6 +7691,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\stasik\\source\\repos\\Otmetka\\RESTfull\\Students\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Students.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\stasik\\source\\repos\\Otmetka\\RESTfull\\Students\\wwwroot\\404.gif",
+      "SourceId": "Students",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\stasik\\source\\repos\\Otmetka\\RESTfull\\Students\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "404.gif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\404.gif"
     },
     {
       "Identity": "C:\\Users\\stasik\\source\\repos\\Otmetka\\RESTfull\\Students\\wwwroot\\css\\app.css",

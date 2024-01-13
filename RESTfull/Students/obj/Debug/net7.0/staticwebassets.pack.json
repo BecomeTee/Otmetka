@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\Students.styles.css"
     },
     {
+      "Id": "C:\\Users\\stasik\\source\\repos\\Otmetka\\RESTfull\\Students\\wwwroot\\404.gif",
+      "PackagePath": "staticwebassets\\404.gif"
+    },
+    {
       "Id": "C:\\Users\\stasik\\source\\repos\\Otmetka\\RESTfull\\Students\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },
