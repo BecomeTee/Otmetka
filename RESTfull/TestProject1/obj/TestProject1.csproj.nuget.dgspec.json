@@ -1,0 +1,318 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\stasik\\source\\repos\\Otmetka\\RESTfull\\TestProject1\\TestProject1.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\stasik\\source\\repos\\Otmetka\\RESTfull\\RESTfull.API\\RESTfull.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\stasik\\source\\repos\\Otmetka\\RESTfull\\RESTfull.API\\RESTfull.API.csproj",
+        "projectName": "RESTfull.API",
+        "projectPath": "C:\\Users\\stasik\\source\\repos\\Otmetka\\RESTfull\\RESTfull.API\\RESTfull.API.csproj",
+        "packagesPath": "C:\\Users\\stasik\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\stasik\\source\\repos\\Otmetka\\RESTfull\\RESTfull.API\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\stasik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\stasik\\source\\repos\\Otmetka\\RESTfull\\RESTfull.Domain\\RESTfull.Domain.csproj": {
+                "projectPath": "C:\\Users\\stasik\\source\\repos\\Otmetka\\RESTfull\\RESTfull.Domain\\RESTfull.Domain.csproj"
+              },
+              "C:\\Users\\stasik\\source\\repos\\Otmetka\\RESTfull\\RESTfull.Infrastructure\\RESTfull.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\stasik\\source\\repos\\Otmetka\\RESTfull\\RESTfull.Infrastructure\\RESTfull.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Cors": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\stasik\\source\\repos\\Otmetka\\RESTfull\\RESTfull.Domain\\RESTfull.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\stasik\\source\\repos\\Otmetka\\RESTfull\\RESTfull.Domain\\RESTfull.Domain.csproj",
+        "projectName": "RESTfull.Domain",
+        "projectPath": "C:\\Users\\stasik\\source\\repos\\Otmetka\\RESTfull\\RESTfull.Domain\\RESTfull.Domain.csproj",
+        "packagesPath": "C:\\Users\\stasik\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\stasik\\source\\repos\\Otmetka\\RESTfull\\RESTfull.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\stasik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\stasik\\source\\repos\\Otmetka\\RESTfull\\RESTfull.Infrastructure\\RESTfull.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\stasik\\source\\repos\\Otmetka\\RESTfull\\RESTfull.Infrastructure\\RESTfull.Infrastructure.csproj",
+        "projectName": "RESTfull.Infrastructure",
+        "projectPath": "C:\\Users\\stasik\\source\\repos\\Otmetka\\RESTfull\\RESTfull.Infrastructure\\RESTfull.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\stasik\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\stasik\\source\\repos\\Otmetka\\RESTfull\\RESTfull.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\stasik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\stasik\\source\\repos\\Otmetka\\RESTfull\\RESTfull.Domain\\RESTfull.Domain.csproj": {
+                "projectPath": "C:\\Users\\stasik\\source\\repos\\Otmetka\\RESTfull\\RESTfull.Domain\\RESTfull.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Cors": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\stasik\\source\\repos\\Otmetka\\RESTfull\\TestProject1\\TestProject1.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\stasik\\source\\repos\\Otmetka\\RESTfull\\TestProject1\\TestProject1.csproj",
+        "projectName": "TestProject1",
+        "projectPath": "C:\\Users\\stasik\\source\\repos\\Otmetka\\RESTfull\\TestProject1\\TestProject1.csproj",
+        "packagesPath": "C:\\Users\\stasik\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\stasik\\source\\repos\\Otmetka\\RESTfull\\TestProject1\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\stasik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\stasik\\source\\repos\\Otmetka\\RESTfull\\RESTfull.API\\RESTfull.API.csproj": {
+                "projectPath": "C:\\Users\\stasik\\source\\repos\\Otmetka\\RESTfull\\RESTfull.API\\RESTfull.API.csproj"
+              },
+              "C:\\Users\\stasik\\source\\repos\\Otmetka\\RESTfull\\RESTfull.Domain\\RESTfull.Domain.csproj": {
+                "projectPath": "C:\\Users\\stasik\\source\\repos\\Otmetka\\RESTfull\\RESTfull.Domain\\RESTfull.Domain.csproj"
+              },
+              "C:\\Users\\stasik\\source\\repos\\Otmetka\\RESTfull\\RESTfull.Infrastructure\\RESTfull.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\stasik\\source\\repos\\Otmetka\\RESTfull\\RESTfull.Infrastructure\\RESTfull.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.5.0, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.13.3, )"
+            },
+            "NUnit.Analyzers": {
+              "target": "Package",
+              "version": "[3.6.1, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[4.4.2, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[3.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
