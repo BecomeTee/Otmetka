@@ -29,7 +29,7 @@ else if (searchResults != null && searchResults.Count > 0)
                             <p class="mb-0" style="margin-right: 25px; font-size: 32px; line-height: 1;">@(i+1). @result.Name</p>
                             <p class="mb-0" style="font-size: 32px; line-height: 1;">@result.Group</p>
                         </div>
-                        <button class="btn btn-primary align-self-center" @onclick="(e) => NavigateToSchedule(result.ID)">Узнать расписание</button>
+                        <button class="btn btn-primary align-self-center" @onclick="(e) => NavigateToAttendance()">Узнать расписание</button>
                     </div>
                 }
 }
@@ -45,44 +45,86 @@ else if (!string.IsNullOrWhiteSpace(searchText))
 else
 {
     <p>Введите в поиск имя и фамилию студента, у которого вы хотите посмотреть расписание</p>
+    <table class="table table-bordered">
+        <tbody>
+            <tr>
+            <tr>
+                <td colspan="5" style="background-color: #f2f2f2; text-align: center;">15.01.2024</td>
+            </tr>
 
+            </tr>
+            <tr>
+                <td style="text-align: center;">09.00 - 10.35</td>
+                <td style="text-align: center;">Математика</td>
+                <td style="text-align: center;"> Ауд. 200</td>
+                <td style="text-align: center;">Лабковская Р.Я.</td>
+                <td style="text-align: center;">
+                    <span>Посетил занятие</span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+}
 
+@if (classes != null && classes.Count > 0)
+{
+
+    <h1>Расписание:</h1>
+        @foreach (var classInfo in classes)
+        {
+            <table class="table table-bordered">
+                <tbody>
+                <tr>
+                <tr>
+                    <td colspan="5" style="background-color: #f2f2f2; text-align: center;">@classInfo.DateStart.ToString("dd.MM.yyyy")</td>
+                </tr>
+
+                </tr>
+                <tr>
+                    <td style="text-align: center;">@classInfo.DateStart.ToString("HH:mm") - @classInfo.DateFinish.ToString("HH:mm")</td>
+                    <td style="text-align: center;">@classInfo.Name</td>
+                    <td style="text-align: center;"> Ауд. @classInfo.Room</td>
+                    <td style="text-align: center;">@classInfo.Teacher</td>
+                        <td>
+                             @if (attendances.Any(a => a.Id_class == classInfo.Id_class))
+                            {
+                                var attendance = attendances.First(a => a.Id_class == classInfo.Id_class);
+                                if (attendance.Attend)
+                                {
+                                    <span>Посетил занятие</span>
+                                }
+                                else
+                                {
+                                    <button class="btn btn-primary">Отметиться</button>
+                                }
+                            }
+                            else
+                            {
+                                <button class="btn btn-primary">Отметиться</button>
+                            }
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        }
 }
 
 
 @code {
-
     string searchText = "";
     List<(Guid ID, string Name, string Group)> searchResults = new List<(Guid ID, string Name, string Group)>();
     List<(Guid Id_class, Guid Id_student, bool Attend)> attendances = new List<(Guid Id_class, Guid Id_student, bool Attend)>();
+    List<(Guid Id_class, string Name, DateTime DateStart, DateTime DateFinish, int Room, string Teacher)> classes = new List<(Guid Id_class, string Name, DateTime DateStart, DateTime DateFinish, int Room, string Teacher)>();
     bool isSearching = false;
     bool isValidInput = true;
 
     [Inject]
     HttpClient HttpClient { get; set; }
 
-    async Task NavigateToSchedule(Guid studentId)
+    void NavigateToAttendance()
     {
-            
-        try
-        {
-            HttpResponseMessage response = await HttpClient.GetAsync($"https://localhost:7112/api/Attend/GetAttendsByStudentId/{studentId}");
-            if (response.IsSuccessStatusCode)
-            {
-                var studentResponses = await response.Content.ReadFromJsonAsync<List<AttendDto>>();
-                attendances = studentResponses.Select(sr => (sr.Id_class, sr.Id_student, sr.Attend)).ToList();
-                NavigationManager.NavigateTo($"/schedule/{attendances}");
-            }
-            else if (response.StatusCode == HttpStatusCode.NotFound)
-            {
-                NavigationManager.NavigateTo($"/oops");
-            }
-            
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine($"Ошибка: {ex.Message}");
-        }
+        NavigationManager.NavigateTo($"/Attendance");
+
     }
 
     async Task PerformSearch()
@@ -106,7 +148,6 @@ else
                     {
                         var studentResponses = await response.Content.ReadFromJsonAsync<List<StudentDto>>();
                         searchResults = studentResponses.Select(sr => (sr.Id, sr.Name, sr.Group)).ToList();
-                        //searchResults = await response.Content.ReadFromJsonAsync<List<(Guid ID, string Name, string Group)>>();
                         isValidInput = true;
                     }
                     else if (response.StatusCode == HttpStatusCode.NotFound)

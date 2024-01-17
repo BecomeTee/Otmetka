@@ -1,51 +1,51 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\stasik\\source\\repos\\Otmetka\\RESTfull\\Students\\bin\\Debug\\net7.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "Id": "D:\\Visualka\\Шабанов\\Otmetka3\\Otmetka\\RESTfull\\Students\\bin\\Debug\\net7.0\\wwwroot\\_framework\\blazor.webassembly.js",
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
     },
     {
-      "Id": "C:\\Users\\stasik\\source\\repos\\Otmetka\\RESTfull\\Students\\obj\\Debug\\net7.0\\compressed\\w5wuzthsfj.gz",
+      "Id": "D:\\Visualka\\Шабанов\\Otmetka3\\Otmetka\\RESTfull\\Students\\obj\\Debug\\net7.0\\build-gz\\tsMm+ODF.gz",
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
     },
     {
-      "Id": "C:\\Users\\stasik\\source\\repos\\Otmetka\\RESTfull\\Students\\obj\\Debug\\net7.0\\scopedcss\\bundle\\Students.styles.css",
+      "Id": "D:\\Visualka\\Шабанов\\Otmetka3\\Otmetka\\RESTfull\\Students\\obj\\Debug\\net7.0\\scopedcss\\bundle\\Students.styles.css",
       "PackagePath": "staticwebassets\\Students.styles.css"
     },
     {
-      "Id": "C:\\Users\\stasik\\source\\repos\\Otmetka\\RESTfull\\Students\\wwwroot\\404.gif",
+      "Id": "D:\\Visualka\\Шабанов\\Otmetka3\\Otmetka\\RESTfull\\Students\\wwwroot\\404.gif",
       "PackagePath": "staticwebassets\\404.gif"
     },
     {
-      "Id": "C:\\Users\\stasik\\source\\repos\\Otmetka\\RESTfull\\Students\\wwwroot\\css\\app.css",
+      "Id": "D:\\Visualka\\Шабанов\\Otmetka3\\Otmetka\\RESTfull\\Students\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },
     {
-      "Id": "C:\\Users\\stasik\\source\\repos\\Otmetka\\RESTfull\\Students\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Id": "D:\\Visualka\\Шабанов\\Otmetka3\\Otmetka\\RESTfull\\Students\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\stasik\\source\\repos\\Otmetka\\RESTfull\\Students\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Id": "D:\\Visualka\\Шабанов\\Otmetka3\\Otmetka\\RESTfull\\Students\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\stasik\\source\\repos\\Otmetka\\RESTfull\\Students\\wwwroot\\favicon.png",
+      "Id": "D:\\Visualka\\Шабанов\\Otmetka3\\Otmetka\\RESTfull\\Students\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
-      "Id": "C:\\Users\\stasik\\source\\repos\\Otmetka\\RESTfull\\Students\\wwwroot\\icon-192.png",
+      "Id": "D:\\Visualka\\Шабанов\\Otmetka3\\Otmetka\\RESTfull\\Students\\wwwroot\\icon-192.png",
       "PackagePath": "staticwebassets\\icon-192.png"
     },
     {
-      "Id": "C:\\Users\\stasik\\source\\repos\\Otmetka\\RESTfull\\Students\\wwwroot\\index.html",
+      "Id": "D:\\Visualka\\Шабанов\\Otmetka3\\Otmetka\\RESTfull\\Students\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {
-      "Id": "C:\\Users\\stasik\\source\\repos\\Otmetka\\RESTfull\\Students\\wwwroot\\sample-data\\weather.json",
+      "Id": "D:\\Visualka\\Шабанов\\Otmetka3\\Otmetka\\RESTfull\\Students\\wwwroot\\sample-data\\weather.json",
       "PackagePath": "staticwebassets\\sample-data\\weather.json"
     },
     {
-      "Id": "C:\\Users\\stasik\\source\\repos\\Otmetka\\RESTfull\\Students\\wwwroot\\бончлого.png",
+      "Id": "D:\\Visualka\\Шабанов\\Otmetka3\\Otmetka\\RESTfull\\Students\\wwwroot\\бончлого.png",
       "PackagePath": "staticwebassets\\бончлого.png"
     },
     {

@@ -26,6 +26,14 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/stasik/source/repos/Otmetka/RESTfull/Students/Pages/Attendance.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXR0ZW5kYW5jZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/stasik/source/repos/Otmetka/RESTfull/Students/Pages/Classes.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xhc3Nlcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/stasik/source/repos/Otmetka/RESTfull/Students/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
@@ -40,10 +48,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/stasik/source/repos/Otmetka/RESTfull/Students/Pages/Schedule.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2NoZWR1bGUucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/stasik/source/repos/Otmetka/RESTfull/Students/Pages/Weather.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV2VhdGhlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/stasik/source/repos/Otmetka/RESTfull/Students/_Imports.razor]

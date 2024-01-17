@@ -68,8 +68,8 @@ namespace RESTfull.API.Controllers
                 return NotFound();
             }
 
-            var classDto = ClassDtoMapper.ToDtoList(clas);
-            return Ok(classDto);
+            //var classDto = ClassDtoMapper.ToDtoList(clas);
+            return Ok(clas);
         }
 
         ////////////////////////
